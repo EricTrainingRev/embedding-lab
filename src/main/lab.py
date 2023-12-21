@@ -48,27 +48,17 @@ print(f"size of embedded query: {len(embedded_query)}")
 """
 def embed_documents(documents: list[str]) -> list[float]:
     # TODO: embed the documents passed in the documents list and return the embeddings
-    embedder = HuggingFaceEmbeddings()
-    return embedder.embed_documents(documents)
+    pass
 
 def embed_query(query: str) -> list[float]:
     # TODO: embed the query passed in the query string and return the embedding
-    embedder = HuggingFaceEmbeddings()
-    return embedder.embed_query(query)
+    pass
 
 def organize_documents_and_embeddings(documents: list[str]) -> list[list[int, str, list[float]]]:
     """
-        Use the embed_documents method to embed the documents and organize them with their text and an id 
-        inside of a list. Return the organized data inside a list.
+        TODO:Use the embed_documents method to embed the documents and organize them with their text and 
+        an id inside of a list. Return the organized data inside a list.
     """
-    organized_data = []
-    embeddings = embed_documents(documents)
-    for i in range(len(documents)):
-        doc_id = i
-        doc_text = documents[i]
-        doc_embedding = embeddings[i]
-        organized_data.append([doc_id, doc_text, doc_embedding])
-        
-    return organized_data
+    pass
         
     
